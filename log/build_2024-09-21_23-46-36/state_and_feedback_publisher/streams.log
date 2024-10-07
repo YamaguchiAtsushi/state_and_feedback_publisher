@@ -1,0 +1,55 @@
+[0.012s] Invoking command in '/home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/build/state_and_feedback_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher -DCMAKE_INSTALL_PREFIX=/home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/install/state_and_feedback_publisher
+[0.065s] -- The C compiler identification is GNU 11.4.0
+[0.122s] -- The CXX compiler identification is GNU 11.4.0
+[0.129s] -- Detecting C compiler ABI info
+[0.197s] -- Detecting C compiler ABI info - done
+[0.206s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.206s] -- Detecting C compile features
+[0.206s] -- Detecting C compile features - done
+[0.209s] -- Detecting CXX compiler ABI info
+[0.291s] -- Detecting CXX compiler ABI info - done
+[0.300s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.300s] -- Detecting CXX compile features
+[0.301s] -- Detecting CXX compile features - done
+[0.304s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.488s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.636s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.642s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.651s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.664s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.682s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.732s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.735s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.827s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.857s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.900s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.910s] -- Looking for pthread.h
+[0.982s] -- Looking for pthread.h - found
+[0.982s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.055s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.056s] -- Found Threads: TRUE  
+[1.116s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[1.158s] -- Found nav2_msgs: 1.1.15 (/opt/ros/humble/share/nav2_msgs/cmake)
+[1.223s] -- Found tf2: 0.25.7 (/opt/ros/humble/share/tf2/cmake)
+[1.234s] -- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.247s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.249s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.249s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.313s] -- Found tsukutsuku2_msgs: 0.0.0 (/home/yamaguchi-a/ros2_ws/install/tsukutsuku2_msgs/share/tsukutsuku2_msgs/cmake)
+[1.329s] -- Found ament_cmake_auto: 1.3.10 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.403s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.418s] -- Configuring done
+[1.432s] -- Generating done
+[1.435s] -- Build files have been written to: /home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/build/state_and_feedback_publisher
+[1.447s] Invoked command in '/home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/build/state_and_feedback_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher -DCMAKE_INSTALL_PREFIX=/home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/install/state_and_feedback_publisher
+[1.450s] Invoking command in '/home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/build/state_and_feedback_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/build/state_and_feedback_publisher -- -j8 -l8
+[1.502s] [ 66%] [32mBuilding CXX object CMakeFiles/state_and_feedback_publisher.dir/src/state_and_feedback_publisher_node.cpp.o[0m
+[1.503s] [ 66%] [32mBuilding CXX object CMakeFiles/state_and_feedback_publisher.dir/src/state_and_feedback_publisher.cpp.o[0m
+[6.542s] [100%] [32m[1mLinking CXX executable state_and_feedback_publisher[0m
+[6.800s] [100%] Built target state_and_feedback_publisher
+[6.812s] Invoked command in '/home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/build/state_and_feedback_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/build/state_and_feedback_publisher -- -j8 -l8
+[6.852s] Invoking command in '/home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/build/state_and_feedback_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/build/state_and_feedback_publisher
+[6.860s] -- Install configuration: ""
+[6.860s] -- Installing: /home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/install/state_and_feedback_publisher/lib/state_and_feedback_publisher/state_and_feedback_publisher
+[6.861s] -- Set runtime path of "/home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/install/state_and_feedback_publisher/lib/state_and_feedback_publisher/state_and_feedback_publisher" to ""
+[6.863s] Invoked command in '/home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/build/state_and_feedback_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yamaguchi-a/ros2_ws/src/state_and_feedback_publisher/build/state_and_feedback_publisher

@@ -1,0 +1,66 @@
+cmake_minimum_required(VERSION 3.8)
+project(state_and_feedback_publisher)
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+# find dependencies
+# find_package(ament_cmake REQUIRED)
+# uncomment the following section in order to fill in
+# further dependencies manually.
+# find_package(<dependency> REQUIRED)
+
+find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(nav2_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+find_package(tsukutsuku2_msgs REQUIRED)
+
+
+
+find_package(ament_cmake_auto REQUIRED)
+ament_auto_find_build_dependencies()
+
+include_directories(
+  include
+)
+
+#add_executable(nav2_send_goal src/nav2_send_goal.cpp)
+
+
+ament_auto_add_executable(state_and_feedback_publisher src/state_and_feedback_publisher.cpp src/state_and_feedback_publisher_node.cpp)
+ament_target_dependencies(state_and_feedback_publisher rclcpp rclcpp_action nav2_msgs nav_msgs tf2 tf2_geometry_msgs tsukutsuku2_msgs)
+
+
+#ament_auto_add_executable(state_and_feedback_publisher src/state_and_feedback_publisher.cpp)
+#ament_target_dependencies(state_and_feedback_publisher rclcpp tsukutsuku2_msgs)
+
+
+install(TARGETS
+  state_and_feedback_publisher
+  #state_and_feedback_publisher
+  DESTINATION lib/${PROJECT_NAME}/
+)
+
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  # the following line skips the linter which checks for copyrights
+  # comment the line when a copyright and license is added to all source files
+  set(ament_cmake_copyright_FOUND TRUE)
+  # the following line skips cpplint (only works in a git repo)
+  # comment the line when this package is in a git repo and when
+  # a copyright and license is added to all source files
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+#ament_auto_package(
+#  INSTALL_TO_SHARE
+#  launch
+#)
+
+ament_package()

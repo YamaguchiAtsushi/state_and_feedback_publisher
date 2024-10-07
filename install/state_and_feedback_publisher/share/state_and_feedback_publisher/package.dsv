@@ -1,0 +1,5 @@
+source;share/state_and_feedback_publisher/local_setup.bash
+source;share/state_and_feedback_publisher/local_setup.dsv
+source;share/state_and_feedback_publisher/local_setup.ps1
+source;share/state_and_feedback_publisher/local_setup.sh
+source;share/state_and_feedback_publisher/local_setup.zsh
