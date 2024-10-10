@@ -3,7 +3,7 @@
 StateAndFeedbackPublisher::StateAndFeedbackPublisher() : Node("state_and_feedback_publisher"), current_state_(0)
 {
     // tsukutsuku2_msgs::msg::StateAndFeedbackメッセージのパブリッシャーを作成
-    publisher_ = this->create_publisher<tsukutsuku2_msgs::msg::StateAndFeedback>("state_and_feedback_topic", 10);
+    publisher_ = this->create_publisher<tsukutsuku2_msgs::msg::StateAndFeedback>("/state", 10);
 
     // 5秒ごとにPublishStateAndFeedback関数を実行するタイマーを設定
     timer_ = this->create_wall_timer(
